@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.github.wkliwk.adbtransfer">
+
+    <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="33" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application android:label="adb-multiuser-transfer" android:allowBackup="false" android:requestLegacyExternalStorage="true">
+        <!-- Exported so that `adb shell content` can reach it; TransferProvider itself rejects every caller except the adb shell. -->
+        <provider
+            android:name=".TransferProvider"
+            android:authorities="io.github.wkliwk.adbtransfer"
+            android:exported="true" />
+    </application>
+</manifest>

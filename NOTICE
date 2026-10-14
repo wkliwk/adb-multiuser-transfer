@@ -1,0 +1,8 @@
+adb-multiuser-transfer (adb-multiuser-transfer APK)
+Copyright 2026 wkliwk. Licensed under the Apache License 2.0 (see LICENSE).
+
+This app is original code (Apache-2.0, see LICENSE). Its idea and URI scheme follow AOSP's TradefedContentProvider
+(platform/tools/tradefederation, util-apps/ContentProvider; Copyright (C) 2018 The Android Open Source Project, Apache-2.0),
+which was reviewed on 2026-10-13 via the third-party mirror https://github.com/riscv-android-src/platform-tools-tradefederation
+(commit de65198d356aaf1199fabf49f3d82f507e1e2c5a). No AOSP source file is copied into this repository (the earlier
+verbatim copy was replaced in the second commit; see git history).
